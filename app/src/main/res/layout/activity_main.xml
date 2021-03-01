@@ -2,11 +2,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbarAlwaysDrawVerticalTrack="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
 
-    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -20,13 +19,13 @@
             android:id="@+id/enter_name_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_your_name"/>
+            android:hint="@string/enter_your_name" />
 
         <TextView
             style="@style/CustomText"
-            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/toppings" />
 
 
@@ -40,12 +39,12 @@
             android:id="@+id/chocolate_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/chocolate"/>
+            android:text="@string/chocolate" />
 
 
         <TextView
-            style="@style/CustomText"
             android:id="@+id/quantity"
+            style="@style/CustomText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -62,14 +61,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:height="48dp"
+                android:background="@color/background"
                 android:onClick="decrement"
-                android:text="@string/minus" />
+                android:text="@string/minus"
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/quantity_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
                 android:text="@string/default_quantity"
@@ -80,11 +82,14 @@
                 android:id="@+id/increment_button"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="16dp"
                 android:height="48dp"
+                android:background="@color/background"
                 android:onClick="increment"
-                android:text="@string/plus" />
+                android:text="@string/plus"
+                android:textColor="@color/white" />
 
 
         </LinearLayout>
@@ -108,8 +113,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@color/background"
             android:onClick="submitOrder"
-            android:text="@string/order" />
+            android:text="@string/order"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </ScrollView>
